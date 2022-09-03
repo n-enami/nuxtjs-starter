@@ -4,13 +4,19 @@
   "description": "My divine Nuxt.js project",
   "author": "Christian Nwamba",
   "private": true,
+  // Nuxt.js のビルドから静的 Web サイトを生成する
+  // https://docs.microsoft.com/ja-jp/azure/static-web-apps/deploy-nuxtjs
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt generate",
-    "start": "nuxt start",
-    "generate": "nuxt build",
-    "test": "playwright test"
-  },
+    "dev": "nuxt dev",
+    "build": "nuxt generate"
+  },  
+  // "scripts": {
+  //   "dev": "nuxt",
+  //   "build": "nuxt generate",
+  //   "start": "nuxt start",
+  //   "generate": "nuxt build",
+  //   "test": "playwright test"
+  // },
   "dependencies": {
     "isomorphic-unfetch": "^3.1.0",
     "nuxt": "^2.15.7",
