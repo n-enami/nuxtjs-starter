@@ -1,5 +1,21 @@
+// 動的ルートから静的ページを生成する
+// https://docs.microsoft.com/ja-jp/azure/static-web-apps/deploy-nuxtjs#generate-static-pages-from-dynamic-routes
+import { projects } from "./utils/projectsData";
 
 export default {
+  mode: "universal",
+  
+  generate: {
+    async routes() {
+      const paths = [];
+
+      projects.forEach(project => {
+        paths.push(`/project/${project.slug}`);
+      });
+
+      return paths;
+    }
+  }
   /*
   ** Headers of the page
   */
