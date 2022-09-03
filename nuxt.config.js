@@ -3,7 +3,8 @@
 import { projects } from "./utils/projectsData";
 
 export default {
-  //mode: "universal",
+  target: 'static',
+  mode: "universal",
  
 
   /*
